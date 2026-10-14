@@ -907,7 +907,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     // 상담 버튼 클릭 → 맞춤 이벤트 ConsultClick (cal 네이티브 'Lead'와 충돌 방지·버튼 위치 라벨)
     (function(){
-      var ctas=[['.cta','nav'],['.btn','hero'],['.b1','final'],['.sc-btn','sticky']];
+      var ctas=[['.cta','nav'],['.btn','hero'],['.b1','final'],['.sc-btn','sticky'],['.pg-btn','program'],['.pg-cta','program']];
       ctas.forEach(function(pair){
         document.querySelectorAll(pair[0]).forEach(function(a){
           a.addEventListener('click', function(){
