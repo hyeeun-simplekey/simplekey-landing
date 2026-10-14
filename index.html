@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>심플키 · AI 업무 시스템 컨설팅</title>
-<meta name="description" content="대표님이 없으면 회사가 멈추나요? 직원 5명이 하던 일을 1명 + AI가. 반복 업무 70% 자동화·업무 효율 최대 5배. 심플키 무료 상담.">
+<meta name="description" content="대표님이 없으면 회사가 멈추나요? 직원 5명이 하던 일을 1명 + AI가. 반복 업무 70% 자동화·업무 효율 평균 3배 이상. 심플키 무료 상담.">
 <!-- Open Graph (카카오톡·SNS 공유 썸네일) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://simplekey.kr/">
 <meta property="og:title" content="심플키 · AI 업무 시스템 컨설팅">
-<meta property="og:description" content="대표님이 없으면 회사가 멈추나요? 직원 5명이 하던 일을 1명 + AI가. 반복 업무 70% 자동화·업무 효율 최대 5배.">
+<meta property="og:description" content="대표님이 없으면 회사가 멈추나요? 직원 5명이 하던 일을 1명 + AI가. 반복 업무 70% 자동화·업무 효율 평균 3배 이상.">
 <meta property="og:image" content="https://simplekey.kr/assets/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -411,6 +411,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @keyframes marquee-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
   @keyframes marquee-rev{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
   @media(max-width:768px){.clients-title{font-size:20px}.marquee-logo{height:28px}.marquee-track{gap:26px}.marquee-row{margin-bottom:22px}}
+  /* FOUNDER 권위형(v8, 2026-10-14): 원형 프로필 + 지표 카드 + 이력 체크리스트 */
+  .fx-wrap{max-width:1000px;margin:48px auto 0;display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center;text-align:left}
+  .fx-left{text-align:center}
+  .fx-right .fx-bio{margin:0;max-width:none}
+  .fx-right .fx-check{margin:16px 0 0;max-width:none}
+  .fx-photo{width:240px;height:240px;margin:0 auto;border-radius:50%;background:linear-gradient(180deg,#F6E3CC 0%,#EFD3B2 100%);border:4px solid #fff;box-shadow:0 14px 32px rgba(35,24,21,.12);overflow:hidden;position:relative}
+  .fx-photo img{position:absolute;left:50%;top:13%;transform:translateX(-41%);width:100%;max-width:none;height:auto;display:block}
+  .fx-name{margin-top:20px;font-size:30px;font-weight:700;color:#231815;letter-spacing:-.5px}
+  .fx-role{margin-top:6px;font-size:16px;font-weight:400;color:#6E5D48}
+  .fx-bio{max-width:640px;margin:16px auto 0;font-size:16px;font-weight:400;color:#6E5D48;line-height:1.85}
+  .fx-auth{margin-top:22px;text-align:center;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .fx-a{border-radius:16px;padding:20px 12px 18px;background:#fff;border:1px solid #EBE3D8;display:flex;flex-direction:column;gap:6px}
+  .fx-a .big{font-size:30px;font-weight:800;color:#E87200;letter-spacing:-.5px;line-height:1.15}
+  .fx-a .s{font-size:14px;font-weight:400;color:#6E5D48;line-height:1.4}
+  .fx-check{list-style:none;margin:22px auto 0;padding:20px 24px;max-width:560px;background:#fff;border:1px solid #EBE3D8;border-radius:16px;text-align:left;display:flex;flex-direction:column;gap:12px}
+  .fx-check li{position:relative;padding-left:30px;font-size:15px;font-weight:400;color:#231815;line-height:1.5}
+  .fx-check li:before{content:"✔";position:absolute;left:0;top:0;color:#E87200;font-weight:700}
+  .fx-check b{font-weight:700}
+  .fx-links{max-width:1000px;margin:36px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+  .fx-link{display:block;background:#fff;border:1px solid #EBE3D8;border-radius:16px;overflow:hidden;text-decoration:none;transition:transform .2s,box-shadow .2s}
+  .fx-link:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(35,24,21,.12)}
+  .fx-link .th{position:relative;background:#0b0b0b}
+  .fx-link .th img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+  .fx-link .cap{display:block;padding:12px 16px 0;font-size:12.5px;font-weight:700;color:#E87200}
+  .fx-link .t{padding:6px 16px 16px;font-size:15px;font-weight:700;color:#231815;line-height:1.4}
+  .fx-link .t span{display:block;margin-top:5px;font-size:13.5px;font-weight:700;color:#E87200}
+  @media(max-width:900px){.fx-wrap{grid-template-columns:1fr;gap:24px;max-width:600px}.fx-right{text-align:center}.fx-right .fx-check{text-align:left}}
+  @media(max-width:640px){.fx-links{grid-template-columns:1fr}.fx-name{font-size:26px}.fx-auth{gap:8px}.fx-a{padding:16px 6px 14px}.fx-a .big{font-size:22px}.fx-a .s{font-size:12.5px}.fx-check{padding:18px 16px}.fx-check li{font-size:14.5px}.fx-photo{width:170px;height:170px}}
+  .founder .sec-title{font-weight:700;color:#231815}
 </style>
 </head>
 <body>
@@ -427,7 +456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="eyebrow">AI 업무 시스템 전문 컨설팅</span>
     <h1><span class="reveal">대표님이 없으면,</span><br><span class="reveal l2">회사가 멈추나요<span class="dot">?</span></span></h1>
     <p class="sub">직원 5명이 하던 일을, 이제 <b>1명 + AI</b>가 합니다.<br>
-      반복 업무 <b>70% 자동화</b> · 업무 효율 <b>최대 5배</b>.</p>
+      반복 업무 <b>70% 자동화</b> · 업무 효율 <b>평균 3배 이상</b>.</p>
     <a class="btn" href="#booking">10분 무료 상담 신청하기 →</a>
     <div class="note">전문 컨설턴트와 10분 상담 후, 대표가 1:1로 진단해요<br>하루 2명 한정</div>
   </section>
@@ -693,17 +722,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- FOUNDER -->
   <section class="sec founder">
     <span class="eyebrow-d">FOUNDER</span>
-    <h2 class="sec-title">심플키를 만든 사람</h2>
-    <div class="fd-grid">
-      <div>
-        <div class="fd-photo"><img src="assets/founder.jpg" alt="심플키 대표 서지영"></div>
-        <div class="fd-name">서지영</div>
-        <div class="fd-role">심플키 대표 · 수석 컨설턴트</div>
-        <p class="fd-quote">“주먹구구식으로 돌아가던 회사를, 직원과 AI가 함께 일하는 회사로 바꿔드립니다.”</p>
+    <h2 class="sec-title">대표님의 일을 넘기는 법,<br>150개 회사에서 설계했습니다</h2>
+    <div class="fx-wrap">
+      <div class="fx-left">
+      <div class="fx-photo"><img src="assets/founder-cutout.png" alt="심플키 대표 서지영"></div>
+      <div class="fx-name">서지영</div>
+      <div class="fx-role">심플키 대표 · 위임 시스템 전문가</div>
       </div>
-      <div>
-        <p class="fd-bio">직접 조직 안에서 일하며 ‘체계 없는 회사’의 문제를 온몸으로 겪었습니다. 비전·목표·R&amp;R·프로세스 같은 본질을 잡아주는 곳은 드물어요. 지난 5년간 150개+ 기업에 그 본질을 심었고, 이제 그 위에 AI를 얹어 ‘대표 없이도 돌아가는 회사’를 만듭니다.</p>
+      <div class="fx-right">
+      <p class="fx-bio">150개가 넘는 회사에서 대표님의 일을 직원에게 넘기는 법을 설계해 왔어요. 일을 잘 맡기는 사람이 AI에게도 잘 맡겨요. 이제는 직원과 AI 비서가 함께 일하는 회사를 만들어 드려요.</p>
+      <div class="fx-auth">
+        <div class="fx-a"><span class="big">150+</span><span class="s">컨설팅 고객사</span></div>
+        <div class="fx-a"><span class="big">3배~</span><span class="s">평균 업무 효율 향상</span></div>
+        <div class="fx-a"><span class="big">70%</span><span class="s">반복 업무 자동화</span></div>
       </div>
+      <ul class="fx-check">
+        <li><b>패스트캠퍼스</b> 「클로드 AI 비서」 강사</li>
+        <li>유튜브 「심플키 | 대표님의 AI 비서실」 <b>구독자 3,400명</b></li>
+        <li>대표 업무 위임 · AI 업무 시스템 컨설팅</li>
+      </ul>
+      </div>
+    </div>
+    <div class="fx-links">
+      <a class="fx-link" href="https://fastcampus.co.kr/biz_online_ace" target="_blank" rel="noopener"><div class="th"><img src="assets/fc-thumb.jpg" alt="패스트캠퍼스 클로드 AI 비서 강의"></div><span class="cap">패스트캠퍼스 공식 강의</span><div class="t">「클로드 AI 비서」 온라인 강의<span>강의 보기 →</span></div></a>
+      <a class="fx-link" href="https://www.youtube.com/watch?v=-_ag0H3M1Rs" target="_blank" rel="noopener"><div class="th"><img src="assets/yt-thumb.jpg" alt="한 달 인건비 1,500만 원 아껴주는 AI 에이전트 활용법 5가지"></div><span class="cap">유튜브 · 구독자 3,400명</span><div class="t">한 달 인건비 1,500만 원 아껴주는 AI 에이전트 활용법 5가지<span>영상 보기 →</span></div></a>
     </div>
   </section>
 
@@ -713,7 +755,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="lg-sub">프로세스 설계부터 AI 자동화까지, 시스템 사고와 원리를 1:1로 알려드려요.</p>
     <div class="lg-metrics">
       <div class="lg-metric"><div class="n">150+</div><div class="l">컨설팅 고객사</div></div>
-      <div class="lg-metric"><div class="n">최대 5배</div><div class="l">업무 효율 향상</div></div>
+      <div class="lg-metric"><div class="n">3배~</div><div class="l">평균 업무 효율 향상</div></div>
       <div class="lg-metric"><div class="n">70%</div><div class="l">반복 업무 자동화</div></div>
     </div>
   </section>
