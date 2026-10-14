@@ -742,7 +742,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="pg-list"><li>반복 업무 정리, 맞춤 AI 세팅</li><li>1:1로 쓰는 법, 정착까지</li></ul>
         <div class="pg-price">220만원~</div>
         <div class="pg-basis">부가세 포함 · 대표님 1인 기준</div>
-        <a class="pg-btn" href="#booking">무료 상담 신청</a>
       </div>
       <div class="pg-card">
         <div class="pg-q">직원한테 맡겨도 일이 돌아오나요?</div>
@@ -750,22 +749,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="pg-list"><li>역할 · 목표 · 업무 흐름 정리</li><li>노션 세팅, 정착까지</li></ul>
         <div class="pg-price">440만원~</div>
         <div class="pg-basis">부가세 포함 · 직원 3명까지 기준</div>
-        <a class="pg-btn" href="#booking">무료 상담 신청</a>
       </div>
       <div class="pg-card best">
         <span class="pg-badge">가장 많이 선택</span>
         <div class="pg-q">둘 다 필요하신가요?</div>
-        <div class="pg-name">업무 시스템 + AI 비서 구축</div>
+        <div class="pg-name">올인원 AI 업무 시스템 구축</div>
         <ul class="pg-list"><li>업무 시스템 구축 전 과정</li><li>AI 비서 구축까지 함께</li></ul>
         <div class="pg-price">660만원~</div>
         <div class="pg-basis">부가세 포함 · 직원 3명까지 기준</div>
-        <a class="pg-btn" href="#booking">무료 상담 신청</a>
       </div>
     </div>
     <p class="pg-note">인원 · 범위에 따라 금액이 달라질 수 있어요.<br class="mo-br"> 상담에서 먼저 알려드리고, 카드 할부도 가능해요.</p>
     <div class="pg-help">
       <div class="t">어떤 프로그램이 맞을지,<br class="mo-br"> 얼마가 들지 아직 모르겠다면</div>
-      <p class="d">10분 통화로 맞는 프로그램과 예상 금액을 알려드려요.<br class="mo-br"> 신청은 결제가 아니에요.</p>
+      <p class="d">10분 통화로 맞는 프로그램과 예상 비용을 알려드려요.</p>
       <a class="pg-cta" href="#booking">10분 무료 상담 신청하기 →</a>
     </div>
   </section>
@@ -907,7 +904,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     // 상담 버튼 클릭 → 맞춤 이벤트 ConsultClick (cal 네이티브 'Lead'와 충돌 방지·버튼 위치 라벨)
     (function(){
-      var ctas=[['.cta','nav'],['.btn','hero'],['.b1','final'],['.sc-btn','sticky'],['.pg-btn','program'],['.pg-cta','program']];
+      var ctas=[['.cta','nav'],['.btn','hero'],['.b1','final'],['.sc-btn','sticky'],['.pg-cta','program']];
       ctas.forEach(function(pair){
         document.querySelectorAll(pair[0]).forEach(function(a){
           a.addEventListener('click', function(){
