@@ -242,12 +242,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .pg-card{position:relative;background:#fff;border:1px solid #e9dfd0;border-radius:16px;padding:30px 24px 26px;box-shadow:0 16px 38px rgba(35,24,21,.12);display:flex;flex-direction:column}
   .pg-card.best{border:2px solid var(--orange)}
   .pg-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--orange);color:#fff;font-size:12px;font-weight:800;padding:5px 14px;border-radius:999px;white-space:nowrap}
+  .pg-for{display:inline-block;align-self:flex-start;background:#FBEBDD;color:#B85A00;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;margin-bottom:14px}
+  .pg-card.best{border-top-left-radius:0;border-top-right-radius:0}
+  .pg-card.best .pg-badge{top:auto;bottom:100%;left:-2px;right:-2px;transform:none;border-radius:16px 16px 0 0;padding:9px 0;text-align:center;font-size:14px;letter-spacing:.3px}
+  .pg-card.best .pg-badge::before{content:'★ '}
+  .pg-for-best{background:var(--orange);color:#fff;letter-spacing:.5px}
   .pg-q{color:var(--orange);font-size:13px;font-weight:700;white-space:nowrap}
   .pg-name{margin-top:8px;font-size:20px;font-weight:800;color:var(--ink);line-height:1.35;letter-spacing:-.5px;white-space:nowrap}
+  .pg-hook{margin-top:6px;font-size:15px;font-weight:600;color:#6E5D48;line-height:1.45}
   .pg-list{list-style:none;margin:18px 0 0;padding:16px 0 0;border-top:1px solid #eee4da;display:flex;flex-direction:column;gap:8px}
   .pg-list li{color:var(--text);font-size:14px;line-height:1.6;white-space:nowrap}
   .pg-list li::before{content:"✓";color:var(--orange);font-weight:800;margin-right:8px}
-  .pg-price{margin-top:22px;font-size:32px;font-weight:800;color:var(--orange);letter-spacing:-1px;line-height:1.2}
+  .pg-price{margin-top:auto;padding-top:22px;font-size:32px;font-weight:800;color:var(--orange);letter-spacing:-1px;line-height:1.2}
   .pg-basis{margin-top:4px;color:var(--muted);font-size:13px;white-space:nowrap}
   .pg-btn{margin-top:22px;display:block;text-align:center;text-decoration:none;font-weight:800;font-size:15px;padding:13px 16px;border-radius:999px;border:1.5px solid var(--orange);color:var(--orange);background:#fff;transition:.2s}
   .pg-btn:hover{background:rgba(232,114,0,.1)}
@@ -259,7 +265,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .pg-help .d{margin-top:8px;color:var(--text);font-size:15px;line-height:1.6}
   .pg-help .pg-cta{display:inline-block;margin-top:20px;background:var(--orange);color:#fff;font-weight:800;font-size:16px;padding:15px 32px;border-radius:999px;text-decoration:none;box-shadow:0 12px 30px rgba(232,114,0,.34);transition:.2s}
   .pg-help .pg-cta:hover{background:#cf6500;transform:translateY(-2px)}
-  @media(max-width:900px){.pg-grid{grid-template-columns:1fr;max-width:420px;gap:28px}}
+  @media(max-width:900px){.pg-grid{grid-template-columns:1fr;max-width:420px;gap:28px}.pg-card.best{margin-top:30px}}
   .proc-sub{text-align:center;margin:16px auto 0;color:var(--text);font-size:16px;line-height:1.6}
 
   .faq{background:var(--cream)}
@@ -779,24 +785,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h2 class="sec-title">대표님은 <span class="hl-box">중요한 일만</span> 하세요</h2>
     <div class="pg-grid">
       <div class="pg-card">
-        <div class="pg-q">모든 일을 혼자 하고 계신가요?</div>
+        <span class="pg-for">1인 기업</span>
         <div class="pg-name">AI 비서 구축</div>
-        <ul class="pg-list"><li>반복 업무 정리, 맞춤 AI 세팅</li><li>1:1로 쓰는 법, 정착까지</li></ul>
+        <div class="pg-hook">하루 4시간 반복 업무에서 벗어나기</div>
+        <ul class="pg-list"><li>반복 업무 자동화</li><li>맞춤 AI 비서 세팅</li><li>1:1 사용법 교육</li><li>정착까지 동행</li></ul>
         <div class="pg-price">220만원~</div>
         <div class="pg-basis">부가세 포함 · 대표님 1인 기준</div>
       </div>
       <div class="pg-card">
-        <div class="pg-q">직원한테 맡겨도 일이 돌아오나요?</div>
+        <span class="pg-for">직원 있는 기업</span>
         <div class="pg-name">업무 시스템 구축</div>
-        <ul class="pg-list"><li>역할 · 목표 · 업무 흐름 정리</li><li>노션 세팅, 정착까지</li></ul>
+        <div class="pg-hook">대표가 자리 비워도 돌아가는 팀 만들기</div>
+        <ul class="pg-list"><li>업무 프로세스 · 매뉴얼</li><li>노션 · 슬랙 협업 툴 세팅</li><li>일 잘하는 법 교육</li><li>팀 정착까지 동행</li></ul>
         <div class="pg-price">440만원~</div>
         <div class="pg-basis">부가세 포함 · 직원 3명까지 기준</div>
       </div>
       <div class="pg-card best">
         <span class="pg-badge">가장 많이 선택</span>
-        <div class="pg-q">둘 다 필요하신가요?</div>
-        <div class="pg-name">올인원 AI 업무 시스템 구축</div>
-        <ul class="pg-list"><li>업무 시스템 구축 전 과정</li><li>AI 비서 구축까지 함께</li></ul>
+        <span class="pg-for pg-for-best">ALL-IN-ONE</span>
+        <div class="pg-name">AI + 업무 시스템 구축</div>
+        <div class="pg-hook">말 한마디에 팀과 AI가 움직이는 회사</div>
+        <ul class="pg-list"><li>업무 시스템 구축 전 과정</li><li>반복 업무 AI 자동화</li><li>팀 전체 일 잘하는 법 교육</li><li>팀 전체 정착 관리</li></ul>
         <div class="pg-price">660만원~</div>
         <div class="pg-basis">부가세 포함 · 직원 3명까지 기준</div>
       </div>
