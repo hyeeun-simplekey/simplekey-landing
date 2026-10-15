@@ -631,49 +631,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- REVIEW -->
-  <section class="sec review">
-    <span class="eyebrow-d">REVIEW</span>
-    <h2 class="sec-title">이미 심플키를 경험한 대표님들이<br>직접 증명합니다</h2>
-    <p class="rv-sub">150개 이상 기업이 심플키와 함께 시스템을 구축했어요.</p>
-    <div class="rv-grid">
-      <div class="rv-card">
-        <div class="stars">★★★★★</div>
-        <div class="t">“매출 3배, 매장 2배 확장”</div>
-        <div class="b">지금은 실무를 아예 안 해요. 매뉴얼·프로세스로 굴러가는 회사가 됐습니다.</div>
-        <div class="src">더즈컬러브랜딩스튜디오 황시연 대표님</div>
-      </div>
-      <div class="rv-card">
-        <div class="stars">★★★★★</div>
-        <div class="t">“단 3명으로 월 6억 달성”</div>
-        <div class="b">대표에게 시스템 사고가 없으면 절대 성공 못 해요.</div>
-        <div class="src">이커머스 뷰티 브랜드 김동민 대표님</div>
-      </div>
-      <div class="rv-card">
-        <div class="stars">★★★★★</div>
-        <div class="t">“1.5개월 만에 업무 효율 2배 이상”</div>
-        <div class="b">예전엔 담당자 한 명씩 불러 확인했는데, 이제 클릭 몇 번이면 다 돼요.</div>
-        <div class="src">포케올데이 김영환 대표님 · 연매출 200억</div>
-      </div>
-      <div class="rv-card">
-        <div class="stars">★★★★★</div>
-        <div class="t">“6개월 만에 매출 2.5배”</div>
-        <div class="b">시스템 구축 후 새 매장 이슈 0건. 업무 누락·문제가 사라졌어요.</div>
-        <div class="src">샐러디아 신태호 이사님 · 프랜차이즈 100호점+</div>
-      </div>
-      <div class="rv-card">
-        <div class="stars">★★★★★</div>
-        <div class="t">“신입 교육 3달 → 2주”</div>
-        <div class="b">매뉴얼·프로세스가 잡히니 효율이 2~3배 올랐어요.</div>
-        <div class="src">굿필마케팅 이혜림 대표님</div>
-      </div>
-      <div class="rv-card">
-        <div class="stars">★★★★★</div>
-        <div class="t">“가장 값지게 회삿돈을 쓴 일”</div>
-        <div class="b">노션 템플릿도 사봤지만 원리를 모르니 적용이 안 됐어요.</div>
-        <div class="src">르마하 김정현 대표님 · 26만 뷰티 크리에이터</div>
-      </div>
-    </div>
-  </section>
+  <style>
+#kakao-review{--brown:#231815;--orange:#E87200;--cream:#F5F0EA;--cream2:#EBE3D8;--white:#FFFFFF;--ink:#231815;--text:#6E5D48}
+#kakao-review *{box-sizing:border-box}#kakao-review ul{margin:0;padding:0}
+dialog.krv{--brown:#231815;--white:#fff;--ink:#231815}
+#kakao-review .sec{background:var(--cream);padding:100px 24px}#kakao-review .eyebrow-d{display:block;text-align:center;color:var(--orange);font-weight:700;font-size:16px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}#kakao-review .sec-title{text-align:center;font-size:clamp(27px,3.6vw,42px);font-weight:700;letter-spacing:-1px;line-height:1.32;color:var(--ink);text-wrap:balance}#kakao-review .sec-sub{text-align:center;margin-top:14px;font-size:16px;color:var(--text)}#kakao-review .grid{max-width:1120px;margin:56px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:22px;list-style:none}#kakao-review .card{display:flex;flex-direction:column;width:100%;height:100%;text-align:left;font:inherit;color:inherit;background:var(--white);border:1px solid var(--cream2);border-radius:18px;padding:10px 10px 16px;cursor:zoom-in;transition:transform .2s,border-color .2s}#kakao-review .card:hover{transform:translateY(-4px);border-color:var(--orange)}#kakao-review .shot{position:relative;display:block;overflow:hidden;border-radius:10px;line-height:0}#kakao-review .shot img{display:block;width:100%;height:auto}#kakao-review .hl{position:absolute;border:2.5px solid var(--orange);border-radius:3px;pointer-events:none}#kakao-review .ttl{display:block;margin:8px 8px 0;font-size:19px;font-weight:700;letter-spacing:-.5px;line-height:1.35;color:var(--ink)}#kakao-review .ttl b{color:var(--orange);font-weight:700}#kakao-review .sub{display:block;margin:6px 8px 0;font-size:16px;color:var(--text)}#kakao-review .note{max-width:1120px;margin:30px auto 0;text-align:center;font-size:16px;color:var(--text)}dialog.krv{border:none;background:transparent;max-width:min(92vw,720px);max-height:92vh;margin:auto;overflow:visible}dialog.krv::backdrop{background:var(--brown)}dialog.krv .pop{position:relative;line-height:0;border-radius:12px;overflow:hidden}dialog.krv .pop img{display:block;max-height:84vh;max-width:100%;width:auto;height:auto;margin:0 auto}dialog.krv .x{display:block;margin:14px auto 0;background:var(--white);color:var(--ink);border:none;border-radius:999px;padding:10px 26px;font:inherit;font-weight:700;font-size:14px;cursor:pointer}@media(max-width:1000px){#kakao-review .grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){#kakao-review .sec{padding:64px 16px}#kakao-review .grid{gap:12px}#kakao-review .ttl{font-size:16px;margin:12px 4px 0}#kakao-review .sub{font-size:14px;margin:4px 4px 0}#kakao-review .card{padding:8px 8px 12px}}#kakao-review .card b{white-space:nowrap}#kakao-review .shot{background:#f3f3f3;aspect-ratio:640/420}#kakao-review .shot img{width:100%;height:100%;object-fit:contain;object-position:center top}#kakao-review .svc{line-height:1.2;font-size:14px;font-weight:700;padding:6px 11px;border-radius:999px;border:2px solid}#kakao-review .svc.ai{background:#CC4400;border-color:#CC4400;color:#fff}#kakao-review .svc.sys{background:#FDE6D2;border-color:#FDE6D2;color:#B34700}#kakao-review .shot{position:relative}#kakao-review .quote{position:absolute;left:50%;transform:translate(-50%,-50%);width:92%;background:#fff;border:3px solid #E5251E;border-radius:0;padding:6px 10px;font-size:15px;font-weight:500;letter-spacing:-.3px;line-height:1.4;color:#191919;box-shadow:0 2px 8px rgba(0,0,0,.2);word-break:keep-all}#kakao-review .tags{display:flex;gap:6px;margin:14px 8px 0;flex-wrap:wrap}#kakao-review .chip,#kakao-review .svc{display:inline-flex;align-items:center;justify-content:center;line-height:1;}#kakao-review .chip{background:var(--brown);color:#fff;font-size:14px;font-weight:700;padding:6px 11px;border-radius:999px}#kakao-review .sub{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}@media(max-width:560px){#kakao-review .chip,#kakao-review .svc{font-size:11px!important;padding:3px 8px!important}#kakao-review .tags{margin:10px 4px 0!important;gap:4px!important}#kakao-review .ttl{font-size:15px!important}#kakao-review .sub{font-size:12px!important}}@media(max-width:1000px){#kakao-review .ttl{font-size:16px!important}#kakao-review .sub{font-size:13px!important}#kakao-review .chip,#kakao-review .svc{font-size:12px!important;padding:4px 9px!important}}@media(max-width:1000px){#kakao-review .quote{font-size:11px!important;line-height:1.35!important;padding:3px 5px!important;width:94%!important;border-width:2px!important}#kakao-review .ttl{white-space:nowrap;overflow:hidden;text-overflow:clip}}@media(max-width:560px){#kakao-review .ttl{font-size:13px!important;letter-spacing:-.3px}#kakao-review .quote{font-size:9.5px!important;width:95%!important}#kakao-review .chip,#kakao-review .svc{font-size:10px!important;padding:3px 7px!important}}
+  </style>
+
+<section class="sec" id="kakao-review">
+  <span class="eyebrow-d">REVIEW</span>
+  <h2 class="sec-title">먼저 심플키를 경험한<br>대표님들의 리얼 후기</h2>
+  <p class="sec-sub">카드를 누르면 원본 크기로 볼 수 있어요</p>
+  <ul class="grid">
+<li><button class="card" type="button" data-open="d-melluna" aria-label="1인 커머스 후기 원본 보기">
+<span class="shot"><img src="assets/kakao-review/card-melluna.png" alt="" loading="lazy"><span class="quote" style="top:30%">AI비서를 통해 업무 효율이 10배 이상 올랐습니다.</span></span><span class="tags"><span class="chip">1인 커머스</span><span class="svc ai">AI 비서</span></span>
+<span class="ttl">경력자 직원 <b>2~3명</b> 둔 느낌</span><span class="sub"><strong>비○○슨</strong> 대표님</span></button></li>
+<li><button class="card" type="button" data-open="d-wellness" aria-label="건기식 후기 원본 보기">
+<span class="shot"><img src="assets/kakao-review/card-wellness.png" alt="" loading="lazy"><span class="quote" style="top:50.1%">신입 교육이 기존 2~3달 걸리던 게 2주로 줄었고요,</span></span><span class="tags"><span class="chip">건기식</span><span class="svc sys">업무 시스템</span></span>
+<span class="ttl">신입 교육 <b>2~3달 → 2주</b></span><span class="sub"><strong>웰니스엠에스</strong> 대표님</span></button></li>
+<li><button class="card" type="button" data-open="d-goodfeel" aria-label="마케팅 회사 후기 원본 보기">
+<span class="shot"><img src="assets/kakao-review/card-goodfeel.png" alt="" loading="lazy"><span class="quote" style="top:50.0%">근데 오늘 심플키만나고 4시간만에 해결이 되었습니다..</span></span><span class="tags"><span class="chip">마케팅 회사</span><span class="svc ai">AI 비서</span></span>
+<span class="ttl"><b>4시간</b> 만에 해결</span><span class="sub"><strong>굿필마케팅</strong> 대표님</span></button></li>
+<li><button class="card" type="button" data-open="d-emmitt" aria-label="피부과 후기 원본 보기">
+<span class="shot"><img src="assets/kakao-review/card-emmitt.png" alt="" loading="lazy"><span class="quote" style="top:42.9%">단순히 만들어주는 느낌이 아니라 저희 병원 상황에 맞춰 같이 정리해주시는 부분이 특히 좋았고,</span></span><span class="tags"><span class="chip">피부과</span><span class="svc sys">업무 시스템</span></span>
+<span class="ttl">만들어주는 게 아니라 <b>같이 정리</b></span><span class="sub"><strong>에미뜨의원</strong> 대표님</span></button></li>
+<li><button class="card" type="button" data-open="d-bleezin" aria-label="커머스 후기 원본 보기">
+<span class="shot"><img src="assets/kakao-review/card-bleezin.png" alt="" loading="lazy"><span class="quote" style="top:50.0%">근데 지금은 진짜 딴 회사가 됐습니다.</span></span><span class="tags"><span class="chip">커머스</span><span class="svc sys">업무 시스템</span></span>
+<span class="ttl">진짜 딴 회사가 됐습니다</span><span class="sub"><strong>블리진</strong> 대표님</span></button></li>
+<li><button class="card" type="button" data-open="d-latrope" aria-label="쇼핑몰 후기 원본 보기">
+<span class="shot"><img src="assets/kakao-review/card-latrope.png" alt="" loading="lazy"><span class="quote" style="top:50.0%">이전에 걸리던 기간보다 2배 이상 속도가 나오게 됐습니다</span></span><span class="tags"><span class="chip">쇼핑몰</span><span class="svc sys">업무 시스템</span></span>
+<span class="ttl">신상품 출시 속도 <b>2배 이상</b></span><span class="sub"><strong>라트로프</strong> 대표님</span></button></li>
+<li><button class="card" type="button" data-open="d-st" aria-label="제조공장 후기 원본 보기">
+<span class="shot"><img src="assets/kakao-review/card-st.png" alt="" loading="lazy"><span class="quote" style="top:53.9%">저희 회사의 성장에 많은 도움이 되었습니다.</span></span><span class="tags"><span class="chip">제조공장</span><span class="svc sys">업무 시스템</span></span>
+<span class="ttl">회사 성장에 <b>많은 도움</b></span><span class="sub"><strong>에스티리테일</strong> 대표님</span></button></li>
+<li><button class="card" type="button" data-open="d-dooz" aria-label="스튜디오 후기 원본 보기">
+<span class="shot"><img src="assets/kakao-review/card-dooz.png" alt="" loading="lazy"><span class="quote" style="top:64.2%">특히 제가 계속 더블체크 안해도 되서 좋고</span></span><span class="tags"><span class="chip">스튜디오</span><span class="svc sys">업무 시스템</span></span>
+<span class="ttl">더블체크 안 해도 돼서 좋아요</span><span class="sub"><strong>더즈 스튜디오</strong> 대표님</span></button></li>
+  </ul>
+
+</section>
+<dialog class="krv" id="d-melluna"><div class="pop"><img src="assets/kakao-review/pop-melluna.png" alt="1인 커머스 카톡 원문"></div><form method="dialog"><button class="x" aria-label="닫기">닫기</button></form></dialog>
+<dialog class="krv" id="d-wellness"><div class="pop"><img src="assets/kakao-review/pop-wellness.png" alt="건기식 카톡 원문"></div><form method="dialog"><button class="x" aria-label="닫기">닫기</button></form></dialog>
+<dialog class="krv" id="d-goodfeel"><div class="pop"><img src="assets/kakao-review/pop-goodfeel.png" alt="마케팅 회사 카톡 원문"></div><form method="dialog"><button class="x" aria-label="닫기">닫기</button></form></dialog>
+<dialog class="krv" id="d-emmitt"><div class="pop"><img src="assets/kakao-review/pop-emmitt.png" alt="피부과 카톡 원문"></div><form method="dialog"><button class="x" aria-label="닫기">닫기</button></form></dialog>
+<dialog class="krv" id="d-bleezin"><div class="pop"><img src="assets/kakao-review/pop-bleezin.png" alt="커머스 카톡 원문"></div><form method="dialog"><button class="x" aria-label="닫기">닫기</button></form></dialog>
+<dialog class="krv" id="d-latrope"><div class="pop"><img src="assets/kakao-review/pop-latrope.png" alt="쇼핑몰 카톡 원문"></div><form method="dialog"><button class="x" aria-label="닫기">닫기</button></form></dialog>
+<dialog class="krv" id="d-st"><div class="pop"><img src="assets/kakao-review/pop-st.png" alt="제조공장 카톡 원문"></div><form method="dialog"><button class="x" aria-label="닫기">닫기</button></form></dialog>
+<dialog class="krv" id="d-dooz"><div class="pop"><img src="assets/kakao-review/pop-dooz.png" alt="스튜디오 카톡 원문"></div><form method="dialog"><button class="x" aria-label="닫기">닫기</button></form></dialog>
+<script>
+document.querySelectorAll('[data-open]').forEach(function(b){b.addEventListener('click',function(){document.getElementById(b.dataset.open).showModal()})});
+document.querySelectorAll('dialog.krv').forEach(function(d){d.addEventListener('click',function(e){if(e.target===d)d.close()})});
+</script>
+
 
   <!-- 고객 인터뷰 (유튜브) -->
   <section class="sec interview">
